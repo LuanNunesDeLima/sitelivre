@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="programando.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="imagens/fundoPainel.jpg" alt="Restaurante">
-    </header>
-    <nav class="barra-menu">
-        <ul>
-            <a href="#"><li>Inicio</li></a>
-            <a href="#"><li>Quem Somos</li></a>
-            <a href="#"><li>Cardápio</li></a>
-            <a href="#"><li>Contato</li></a>
-            <a href="#"><li>Guia Cinco</li></a>
-            <a href="#"><li>Guia Seis</li></a>
-        </ul>
-    </nav>
-    <article></article>
-    <footer></footer>
+    <nav><h1>Jogo da Velha</h1></nav>
+    <main class="tabuleiro">
+        <div onclick="vez = marcarCelula('.celula1', vez);"><h1 class="celula1"></h1></div>
+        <div onclick="vez = marcarCelula('.celula2', vez);"><h1 class="celula2"></h1></div>
+        <div onclick="vez = marcarCelula('.celula3', vez);"><h1 class="celula3"></h1></div>
+        <div onclick="vez = marcarCelula('.celula4', vez);"><h1 class="celula4"></h1></div>
+        <div onclick="vez = marcarCelula('.celula5', vez);"><h1 class="celula5"></h1></div>
+        <div onclick="vez = marcarCelula('.celula6', vez);"><h1 class="celula6"></h1></div>
+        <div onclick="vez = marcarCelula('.celula7', vez);"><h1 class="celula7"></h1></div>
+        <div onclick="vez = marcarCelula('.celula8', vez);"><h1 class="celula8"></h1></div>
+        <div onclick="vez = marcarCelula('.celula9', vez);"><h1 class="celula9"></h1></div>
+    </main>
+
+    <footer>
+        <h1 id="titulo-footer">Pontuação:</h1>
+        <section>
+            <div class="placar"><span class="j1"></span>: XXX | <span class="j2">Isabella</span>: OOOO</div>
+        </section>
+    </footer>
 </body>
 </html>
